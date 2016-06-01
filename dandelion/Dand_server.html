@@ -1,0 +1,26 @@
+<!--
+  Copyright 2016 Valerio Vaccaro - www.valeriovaccaro.it
+
+  Licensed under the MIT License.
+
+
+-->
+
+<<script type="text/javascript">
+    RED.nodes.registerType('dand-server',{
+        category: 'config',
+        defaults: {
+            token: {value:"token",required:true},
+        },
+        label: function() {
+            return "Dandlion: "+this.token;
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="dand-server">
+    <div class="form-row">
+        <label for="node-config-input-token"><i class="icon-bookmark"></i> Token</label>
+        <input type="text" id="node-config-input-token">
+    </div>
+</script>

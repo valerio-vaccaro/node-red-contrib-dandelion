@@ -1,0 +1,24 @@
+{
+    "name"         : "node-red-contrib-dandelion",
+    "version"      : "0.0.1",
+    "description"  : "dandelion.eu API integration on Node-RED",
+    "author"       : "Valerio Vaccaro <valerio.vaccaro@gmail.com>",
+    "dependencies": { 
+      "node-dandelion"  : "latest"
+    },
+    "repository"   : { 
+         "type"    : "git",
+         "url"     : "https://github.com/valerio-vaccaro/node-red-contrib-dandelion"
+    },
+    "keywords"     : [ "node-red", "Natural language", "NLP", "semantic" ],
+    "node-red"     : {
+        "nodes": {
+            "Dand_server": "dandelion/Dand_server.js",
+            "Dand_simil": "dandelion/Dand_simil.js",
+            "Dand_extra": "dandelion/Dand_extra.js",
+            "Dand_class": "dandelion/Dand_class.js",
+            "Dand_detec": "dandelion/Dand_detec.js",
+            "Dand_senti": "dandelion/Dand_senti.js"
+        }
+    }
+}
